@@ -1,7 +1,7 @@
 from typing import List
 
 
-def printer_queue_order(pages):
+def printer_queue_order(pages: List[int]) -> List[int]:
     """
     Problem 1: Round-robin printer.
 
