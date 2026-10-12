@@ -18,14 +18,15 @@ def printer_queue_order(pages: List[int]) -> List[int]:
     """
     out=[]
     docs=[i for i in range(len(pages))]
-    while pages:
+    '''while pages:
         pages[0]-=1
         if pages[0]==0:
             pages.pop(0)
             out.append(docs.pop(0))
         else:
             pages.append(pages.pop(0))
-            docs.append(docs.pop(0))
+            docs.append(docs.pop(0))'''
+    out=sorted(docs,key =lambda x:pages[x])
     return out
 
 
